@@ -14,10 +14,7 @@ indices:
       - /**
     exclude: *excludes
     target: /query-index.json
-    properties:
-      path:
-        select: head > meta[name="path"]
-        value: attribute(el, 'content')
+    properties:      
       title:
         select: head > meta[property="og:title"]
         value: attribute(el, 'content')
